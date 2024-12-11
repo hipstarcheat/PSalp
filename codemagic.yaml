@@ -1,0 +1,19 @@
+workflows:
+  ios-workflow:
+    name: iOS Build and Publish
+    environment:
+      xcode: latest       # Используем последнюю версию Xcode
+      cocoapods: default  # Используем стандартный CocoaPods (если потребуется)
+    scripts:
+      - name: Install dependencies
+        script: |
+          echo "No additional dependencies to install"
+      - name: Build the app
+        script: |
+          xcodebuild -scheme PSalp -sdk iphoneos -destination 'generic/platform=iOS' clean build
+      - name: Create .ipa file
+        script: |
+          xcodebuild -scheme PSalp -sdk iphoneos archive -archivePath ./build/PSalp.xcarchive
+          xcodebuild -exportArchive -archivePath ./build/PSalp.xcarchive -exportOptionsPlist ExportOptions.plist -exportPath ./build
+    artifacts:
+      - build/*.ipa
