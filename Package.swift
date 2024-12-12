@@ -8,7 +8,7 @@ let package = Package(
         .iOS(.v16)  // Минимальная версия iOS
     ],
     products: [
-        .executableTarget(
+        .executable(
             name: "Main",
             targets: ["App"]
         )
@@ -17,7 +17,7 @@ let package = Package(
         // Добавьте зависимости, если они нужны
     ],
     targets: [
-        .target(
+        .executableTarget(
             name: "App",
             dependencies: [],
             path: "Sources/App"  // Путь к исходным файлам
