@@ -10,13 +10,13 @@ workflows:
       - name: Build the app
         script: |
           xcodebuild clean archive \
-            -scheme "MyApp" \
+            -scheme "PSalp" \
             -destination "generic/platform=iOS" \
-            -archivePath ./build/MyApp.xcarchive
+            -archivePath ./build/PSalp.xcarchive
       - name: Create .ipa file
         script: |
           xcodebuild -exportArchive \
-            -archivePath ./build/MyApp.xcarchive \
+            -archivePath ./build/PSalp.xcarchive \
             -exportOptionsPlist ExportOptions.plist \
             -exportPath ./build
     artifacts:
