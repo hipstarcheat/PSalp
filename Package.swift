@@ -20,7 +20,7 @@ let package = Package(
         .target(
             name: "App",
             dependencies: [],
-            path: "Sources/App",  // Путь к исходным файлам
+            path: "Sources/App"  // Путь к исходным файлам
         )
     ]
 )
