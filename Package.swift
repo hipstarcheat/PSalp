@@ -8,7 +8,7 @@ let package = Package(
         .iOS(.v16)  // Минимальная версия iOS
     ],
     products: [
-        .executable(
+        .executableTarget(
             name: "ContenView",
             targets: ["App"]
         )
