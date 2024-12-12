@@ -21,9 +21,6 @@ let package = Package(
             name: "App",
             dependencies: [],
             path: "Sources/App",  // Путь к исходным файлам
-            resources: [
-                .process("../Resources")  // Подключение папки ресурсов
-            ]
         )
     ]
 )
