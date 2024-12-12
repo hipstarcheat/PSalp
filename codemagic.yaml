@@ -10,6 +10,7 @@ workflows:
           echo "No additional dependencies to install"
       - name: Build the app
         script: |
+          xcodebuild -scheme "MyApp" -showdestinations
           xcodebuild -scheme PSalp -sdk iphoneos -destination 'generic/platform=iOS' clean build
       - name: Create .ipa file
         script: |
