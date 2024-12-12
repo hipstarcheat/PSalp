@@ -3,9 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>method</key>
-    <string>app-store</string>  <!-- или ad-hoc, если тестирование -->
-    <key>teamID</key>
-    <string>kiryushinrus@gmail.com</string> <!-- Замените на ваш Apple Developer Team ID -->
+    <string>ad-hoc</string> <!-- Используем ad-hoc для локального распространения -->
     <key>uploadSymbols</key>
     <true/>
     <key>compileBitcode</key>
