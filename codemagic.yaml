@@ -7,7 +7,7 @@ workflows:
     scripts:
       - name: Show available destinations
         script: |
-          xcodebuild -scheme "MyApp" -showdestinations
+          xcodebuild -scheme "Main" -showdestinations
       - name: Install dependencies
         script: |
           echo "No additional dependencies to install"
