@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
     <key>method</key>
-    <string>ad-hoc</string>  <!-- Используйте метод ad-hoc -->
+    <string>development</string>  <!-- Используйте метод ad-hoc -->
 </dict>
 </plist>
