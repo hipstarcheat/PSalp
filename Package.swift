@@ -9,7 +9,7 @@ let package = Package(
     ],
     products: [
         .executable(
-            name: "ContenView.swift",
+            name: "ContenView",
             targets: ["App"]
         )
     ],
