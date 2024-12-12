@@ -9,7 +9,7 @@ let package = Package(
     ],
     products: [
         .executableTarget(
-            name: "ContenView",
+            name: "Main",
             targets: ["App"]
         )
     ],
