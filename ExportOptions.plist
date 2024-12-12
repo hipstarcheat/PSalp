@@ -4,5 +4,7 @@
 <dict>
     <key>method</key>
     <string>development</string>  <!-- Используйте метод ad-hoc -->
+    <key>teamID</key>
+    <string>kiryushinrus@gmail.com</string>
 </dict>
 </plist>
