@@ -5,11 +5,11 @@ import PackageDescription
 let package = Package(
     name: "PSalp",
     platforms: [
-        .iOS(.v15)  // Минимальная версия iOS
+        .iOS(.v16)  // Минимальная версия iOS
     ],
     products: [
         .executable(
-            name: "MyApp",
+            name: "ContenView.swift",
             targets: ["App"]
         )
     ],
