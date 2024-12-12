@@ -3,10 +3,6 @@
 <plist version="1.0">
 <dict>
     <key>method</key>
-    <string>ad-hoc</string> <!-- Используем ad-hoc для локального распространения -->
-    <key>uploadSymbols</key>
-    <true/>
-    <key>compileBitcode</key>
-    <true/>
+    <string>ad-hoc</string>  <!-- Используйте метод ad-hoc -->
 </dict>
 </plist>
