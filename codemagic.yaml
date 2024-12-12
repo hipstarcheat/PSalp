@@ -2,15 +2,11 @@ workflows:
   ios-workflow:
     name: iOS Build and Publish
     environment:
-      xcode: latest       # Используем последнюю версию Xcode
-      cocoapods: default  # Стандартный CocoaPods (если потребуется)
+      xcode: latest
     scripts:
-      - name: Show available destinations
+      - name: Show available schemes
         script: |
-          xcodebuild -scheme "Main" -showdestinations
-      - name: Install dependencies
-        script: |
-          echo "No additional dependencies to install"
+          xcodebuild -list
       - name: Build the app
         script: |
           xcodebuild clean archive \
